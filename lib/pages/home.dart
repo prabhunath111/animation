@@ -40,7 +40,23 @@ class Home extends StatelessWidget {
               child: Text(
                   'Animated positioned widget'
               ),
-            )
+            ),
+            RaisedButton(
+              onPressed: (){
+                Navigator.pushNamed(context, '/animateddefaulttext');
+              },
+              child: Text(
+                  'Animated default text widget'
+              ),
+            ),
+            RaisedButton(
+              onPressed: (){
+                Navigator.pushNamed(context, '/animatedcontainerdemo');
+              },
+              child: Text(
+                  'Animated container widget'
+              ),
+            ),
           ],
         ),
       ),
